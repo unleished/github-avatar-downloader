@@ -32,7 +32,6 @@ if (err) {
   console.log("Errors:", err);
 } else {
     for (var contributor of result) {
-      // console.log(contributor.avatar_url);
       downloadImageByURL(contributor.avatar_url, './avatarImages/' + contributor.login + '.jpg');
     }
   }
